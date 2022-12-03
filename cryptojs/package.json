@@ -1,0 +1,17 @@
+{
+  "name": "cryptojs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "decrypt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "eth-crypto": "^2.4.0",
+    "ethereum-encryption": "^0.0.5",
+    "ethereum-rsa": "^1.0.5"
+  }
+}
