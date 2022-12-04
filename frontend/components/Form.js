@@ -63,7 +63,7 @@ function Form() {
               ZK Phone Validation
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Validate your phone number preserving your privacy.
+              Validate your phone number while preserving your privacy.
               {isLoading && <div>Check Wallet</div>}
               {isSuccess && <div>Transaction: {JSON.stringify(data)}</div>}
             </p>
