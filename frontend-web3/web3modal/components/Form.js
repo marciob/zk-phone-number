@@ -18,11 +18,6 @@ function Form() {
     console.log("handleInputNumber being called: ", e.target.value);
   }
 
-  function handleInputNumber(e) {
-    e.preventDefault();
-    console.log("handleInputNumber being called: ", e.target.value);
-  }
-
   return (
     <div>
       <section className="text-gray-600 body-font relative">
