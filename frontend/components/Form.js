@@ -16,20 +16,21 @@ function Form() {
 
   const provider = new ethers.providers.WebSocketProvider("");
 
-  // const contractInst = new ethers.Contract(contractAddress, abi, provider);
+  const contractInst = new ethers.Contract(contractAddress, abi, provider);
 
-  // //listen for event Requested()
-  // //event Requested signature:
-  // //event Requested(address,bytes)
-  // contractInst.on("Requested", (var1, var2) => {
-  //   let info = {
-  //     var1: var1,
-  //     var2: var2,
-  //   };
-  // });
+  //listen for event Requested()
+  //event Requested signature:
+  //event Requested(address,bytes)
+  contractInst.on("Requested", (var1, var2) => {
+    let info = {
+      var1: var1,
+      var2: var2,
+    };
+  });
 
   function updateOnChange(event) {}
 
+  //call blockchain function here
   function handleNumberField(e) {
     e.preventDefault();
     console.log("handleNumberField being called ", e.target.value);
@@ -98,7 +99,7 @@ function Form() {
                       e.preventDefault();
 
                       try {
-                        safeMint?.();
+                        // safeMint?.();
                       } catch (error) {
                         console.log(error);
                       }
