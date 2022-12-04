@@ -12,6 +12,7 @@
     "crypto-js": "^4.1.1",
     "eth-crypto": "^2.4.0",
     "ethereum-encryption": "^0.0.5",
-    "ethereum-rsa": "^1.0.5"
+    "ethereum-rsa": "^1.0.5",
+    "keccak256": "^1.0.6"
   }
 }
