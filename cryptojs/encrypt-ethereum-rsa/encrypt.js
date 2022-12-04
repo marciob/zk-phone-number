@@ -1,5 +1,7 @@
 const EthRSA = require("ethereum-rsa");
 
+//in the real application the pubKeyReceiver will be hardcoded,
+//in that case pubKeyReceiver will be the verifier public key
 async function encrypt(msg, privKeySender, pubKeyReceiver) {
   const encryptMessage = await EthRSA.encryptMessage(
     msg,
@@ -7,7 +9,7 @@ async function encrypt(msg, privKeySender, pubKeyReceiver) {
     pubKeyReceiver
   );
 
-  console.log(encryptMessage);
+  console.log("encrypted message: ", encryptMessage);
 }
 
 encrypt(

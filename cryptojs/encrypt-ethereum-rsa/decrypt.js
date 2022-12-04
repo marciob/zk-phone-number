@@ -7,7 +7,7 @@ async function decrypt(cipherText, recipientPrivateKey, senderPublicKey) {
     senderPublicKey
   );
 
-  console.log(message);
+  console.log("decrypted message: ", message);
 }
 
 //ex.:
